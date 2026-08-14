@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Đặc sản Tây Nguyên</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 30L14 12L20 22L24 15L36 30H4Z" fill="#6B4226"/>
+                    <path d="M20 8C20 8 15 12 15 16C15 18.7614 17.2386 21 20 21C22.7614 21 25 18.7614 25 16C25 12 20 8 20 8Z" fill="#4F7D45"/>
+                </svg>
+                <span class="logo-text">
+                    <span class="logo-title">Tây Nguyên Sản</span>
+                    <span class="logo-sub">Hương vị đại ngàn</span>
+                </span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="index.html#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="products.html" class="active">Sản phẩm</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section section-header-page">
+            <div class="container">
+                <h1>Đặc sản Tây Nguyên</h1>
+                <p>Khám phá những sản vật đặc trưng mang hương vị và bản sắc của vùng đất Tây Nguyên.</p>
+            </div>
+        </section>
+
+        <section class="section product-toolbar-section">
+            <div class="container">
+                <div class="product-toolbar">
+
+                    <div class="search-box">
+                        <input
+                            type="search"
+                            id="searchInput"
+                            placeholder="Tìm kiếm sản phẩm..."
+                        >
+                        <button id="searchButton" type="button">
+                            Tìm kiếm
+                        </button>
+                    </div>
+
+                    <div class="filter-group">
+                        <select id="categoryFilter">
+                            <option value="">Tất cả phân loại</option>
+                        </select>
+
+                        <select id="originFilter">
+                            <option value="">Tất cả xuất xứ</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section product-list-section">
+            <div class="container">
+
+                <h2>Sản phẩm đặc sản Tây Nguyên</h2>
+
+                <!--
+                    #productList: container để JavaScript (nhiệm vụ #8) đọc
+                    products.json và render sản phẩm vào đây bằng cấu trúc
+                    product-card bên dưới. Div đang để trống theo đúng yêu cầu.
+
+                    Cấu trúc mẫu mỗi product-card mà JavaScript sẽ tạo ra:
+
+                    <article class="product-card">
+                        <img class="product-image" src="" alt="">
+                        <div class="product-info">
+                            <span class="product-category"></span>
+                            <h3 class="product-name"></h3>
+                            <p class="product-origin"></p>
+                            <p class="product-description"></p>
+                            <strong class="product-price"></strong>
+                        </div>
+                    </article>
+                -->
+                <div id="productList" class="product-grid"></div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                <span class="logo-title">Tây Nguyên Sản</span>
+                <p>Đặc sản cao nguyên chính gốc, mang hương vị và bản sắc của vùng đất Tây Nguyên.</p>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="container footer-bottom">
+            &copy; 2026 Tây Nguyên Sản. Bảo lưu mọi quyền.
+        </div>
+    </footer>
+
+</body>
+</html>
