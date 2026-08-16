@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Đặc sản Tây Nguyên</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER ĐỒNG BỘ  -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                <!-- THAY SVG BẰNG THẺ IMG GẮN ẢNH LOGO -->
+                <img src="images/common/logo.png" alt="Logo Tây Nguyên Sản" class="logo-img">
+                <span class="logo-text">
+                    <span class="logo-title">Tây Nguyên Sản</span>
+                    <span class="logo-sub">Hương vị đại ngàn</span>
+                </span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="index.html#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
+                    <li><a href="contact.html" class="active">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- Tiêu đề trang -->
+        <section class="section section-header-page">
+            <div class="container">
+                <h1>Liên hệ với chúng tôi</h1>
+                <p>Hãy để lại lời nhắn hoặc liên hệ trực tiếp, chúng tôi luôn sẵn sàng hỗ trợ bạn.</p>
+            </div>
+        </section>
+
+        <!-- Nội dung trang liên hệ -->
+        <section class="section contact-section">
+            <div class="container">
+                <div class="contact-grid">
+
+                    <!-- CỘT 1: THÔNG TIN LIÊN HỆ -->
+                    <div class="contact-info">
+                        <h2>Thông tin liên hệ</h2>
+                        <p class="contact-desc">Chúng tôi hợp tác trực tiếp với các hợp tác xã nông sản sạch tại 5 tỉnh Tây Nguyên để mang tới sản phẩm chất lượng tốt nhất.</p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-icon">📍</span>
+                                <div>
+                                    <h3>Địa chỉ văn phòng</h3>
+                                    <p>123 Đường Lê Duẩn, Thành phố Buôn Ma Thuột, Tỉnh Đắk Lắk</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-icon">📞</span>
+                                <div>
+                                    <h3>Hotline hỗ trợ</h3>
+                                    <p>0905.XXX.XXX (Hỗ trợ 24/7)</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-icon">✉️</span>
+                                <div>
+                                    <h3>Email liên hệ</h3>
+                                    <p>lienhe@taynguyensan.vn</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bản đồ mô phỏng hoặc nhúng Google Maps -->
+                        <div class="contact-map">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15551.48805626245!2d108.0382035!3d12.6895825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f7d4b4a3a61f%3A0x6b6c2a4f4d4d4d4d!2zQnV0biBNYSBUaHXhu5l0LCDEkOG6r2sgTOG6r2s!5e0!3m2!1svi!2svn!4v1700000000000" 
+                                width="100%" 
+                                height="220" 
+                                style="border:0; border-radius: 8px;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- CỘT 2: FORM LIÊN HỆ -->
+                    <div class="contact-form-container">
+                        <h2>Gửi phản hồi cho chúng tôi</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="fullName">Họ và tên <span class="required">*</span></label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Nhập họ và tên của bạn" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Địa chỉ Email <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Chủ đề <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" placeholder="Tiêu đề lời nhắn" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Nội dung lời nhắn <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="5" placeholder="Viết phản hồi hoặc câu hỏi của bạn tại đây..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit">Gửi thông tin</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <!-- PHẦN 1: 4 CỘT THÔNG TIN CHÍNH -->
+    <div class="container footer-top-grid">
+        
+        <!-- Cột 1: Thương hiệu & Mạng xã hội -->
+        <div class="footer-col col-brand">
+            <div class="brand-wrapper">
+                <img src="images/common/logo.png" alt="Logo Tây Nguyên Sản" class="footer-logo">
+                <p class="brand-slogan">TÂY NGUYÊN SẢN - OCOP & ĐẶC SẢN CAO NGUYÊN</p>
+            </div>
+            <div class="social-links">
+                <span class="social-line"></span>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="YouTube">🔴</a>
+                <a href="#" aria-label="TikTok">🎵</a>
+                <a href="#" aria-label="Zalo">💬</a>
+                <span class="social-line"></span>
+            </div>
+        </div>
+
+        <!-- Cột 2: Chính sách mua hàng -->
+        <div class="footer-col">
+            <h3>Chính sách</h3>
+            <ul class="footer-links">
+                <li><a href="#">Quy chế hoạt động</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách vận chuyển</a></li>
+                <li><a href="#">Chính sách đổi trả & bảo hành</a></li>
+                <li><a href="#">Giải quyết tranh chấp</a></li>
+                <li><a href="#">Quy trình tiếp nhận phản hồi</a></li>
+            </ul>
+        </div>
+
+        <!-- Cột 3: Danh mục nhanh -->
+        <div class="footer-col">
+            <h3>Danh mục</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html#gioi-thieu">Giới thiệu</a></li>
+                <li><a href="products.html">Sản phẩm đặc sản</a></li>
+                <li><a href="contact.html">Liên hệ chúng tôi</a></li>
+                <li><a href="#">Tin tức & Cẩm nang</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+        </div>
+
+        <!-- Cột 4: Hỗ trợ & Liên hệ trực tiếp -->
+        <div class="footer-col col-support">
+            <h3>Bạn cần hỗ trợ? / Liên hệ</h3>
+            <div class="support-items">
+                <div class="support-item">
+                    <span class="support-icon">📍</span>
+                    <p>Shophouse số 12 – Cantata 3, Khu đô thị Thành phố Cà phê, đường Nguyễn Đình Chiểu, phường Tân Lợi, Tp. Buôn Ma Thuột, tỉnh Đắk Lắk.</p>
+                </div>
+                <div class="support-item">
+                    <span class="support-icon">📞</span>
+                    <div>
+                        <p class="working-hours">08h00 - 21h00 tất cả các ngày trong tuần</p>
+                        <p class="hotline-number">0912.345.678</p>
+                    </div>
+                </div>
+                <div class="support-item">
+                    <span class="support-icon">💬</span>
+                    <div>
+                        <p class="live-chat-title">Live Chat trực tuyến</p>
+                        <p class="live-chat-sub">Trò chuyện trực tiếp cùng chuyên gia nông sản</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <!-- PHẦN 3: BẢN QUYỀN & PHƯƠNG THỨC THANH TOÁN -->
+    <div class="container footer-bottom-flex">
+        <div class="footer-copyright">
+            <p>&copy; 2026 taynguyensan.vn - Vận hành bởi CÔNG TY CỔ PHẦN NÔNG SẢN SẠCH TÂY NGUYÊN</p>
+            <p class="trial-disclaimer">Hệ thống đang vận hành phiên bản thử nghiệm để tối ưu hóa trải nghiệm người dùng và hoàn tất các thủ tục thông báo với Bộ Công Thương. Rất mong nhận được ý kiến đóng góp của quý khách!</p>
+        </div>
+        <div class="footer-payments">
+            <span class="payment-title">Chấp nhận thanh toán:</span>
+            <div class="payment-icons">
+                <span class="pay-card visa">Visa</span>
+                <span class="pay-card master">MasterCard</span>
+                <span class="pay-card paypal">PayPal</span>
+                <span class="pay-card amex">Amex</span>
+                <span class="pay-card cod">COD</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

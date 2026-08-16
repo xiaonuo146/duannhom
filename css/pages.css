@@ -1,0 +1,354 @@
+/* --- TRANG CHỦ --- */
+
+/* 1. HERO SECTION (Chỉ giới thiệu chữ trên nền màu nâu ấm áp, đã bỏ ảnh nền lỗi) */
+.hero {
+    position: relative;
+    display: grid;
+    min-height: clamp(350px, 45vh, 480px);
+    place-items: center;
+    background-color: var(--brown-dark); /* Sử dụng nền màu nâu Bazan đậm */
+    text-align: center;
+}
+
+.hero-content {
+    width: min(100% - 32px, 800px);
+    padding: 48px 0;
+}
+
+.hero-title {
+    color: var(--white);
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+}
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
+    margin-bottom: 28px;
+}
+
+/* 2. GIỚI THIỆU TÂY NGUYÊN */
+.intro-section {
+    background-color: var(--cream);
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1.1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.intro-text p {
+    margin-bottom: 16px;
+    color: var(--text-gray);
+    font-size: 15.5px;
+    text-align: justify;
+}
+
+/* CẤU TRÚC LIVESHOW CHUYỂN ẢNH ĐỘNG MƯỢT MÀ */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(67, 41, 24, 0.08);
+    background-color: var(--border-light);
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hiệu ứng mờ dần */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: .4 } 
+    to { opacity: 1 }
+}
+
+/* Đặc trưng & Đặc sản nổi bật */
+.features-section, .products-preview-section {
+    background-color: var(--white);
+    border-top: 1px solid var(--border-light);
+}
+
+/* --- TRANG DANH SÁCH SẢN PHẨM --- */
+.section-header-page {
+    background-color: var(--cream);
+    text-align: center;
+    padding: 64px 0 48px;
+}
+
+.section-header-page h1::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin: 16px auto 0;
+    background-color: var(--green);
+    border-radius: 99px;
+}
+
+.product-toolbar-section {
+    padding-top: 0;
+    padding-bottom: 32px;
+}
+
+.product-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    background-color: var(--white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-card);
+    box-shadow: 0 4px 16px rgba(67, 41, 24, 0.06);
+    padding: 20px 24px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 320px;
+}
+
+.search-box input {
+    flex: 1;
+    background-color: var(--white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    font-size: 15px;
+    color: var(--text-gray);
+}
+
+.search-box button {
+    background-color: var(--forest);
+    color: var(--white);
+    border-radius: var(--radius);
+    padding: 12px 22px;
+    font-weight: 600;
+}
+
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.filter-group select {
+    background-color: var(--white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    font-size: 15px;
+    color: var(--text-gray);
+    min-width: 170px;
+}
+
+/* --- TRANG LIÊN HỆ --- */
+.contact-section {
+    padding: 48px 0 80px 0;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.contact-info, .contact-form-container {
+    flex: 1;
+    min-width: 320px;
+    background-color: var(--white);
+    padding: 34px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 4px 14px rgba(67, 41, 24, 0.05);
+}
+
+.contact-info h2, .contact-form-container h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.contact-desc {
+    color: var(--text-gray);
+    margin-bottom: 25px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.info-icon {
+    font-size: 24px;
+    background-color: var(--cream);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.info-item h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.info-item p {
+    color: var(--text-gray);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.contact-form label {
+    font-weight: 600;
+    font-size: 14.2px;
+}
+
+.required {
+    color: #e11d21;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 11px 14px;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+}
+
+.btn-submit {
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: var(--radius);
+    padding: 12px;
+}
+
+.btn-submit:hover {
+    background-color: var(--forest);
+}
+
+/* --- TƯƠNG THÍCH MÀN HÌNH --- */
+@media (max-width: 992px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-top-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .footer-payments {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .main-nav ul {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px 20px;
+    }
+    .product-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search-box {
+        width: 100%;
+    }
+    .search-box input, .search-box button {
+        width: 100%;
+    }
+    .filter-group {
+        flex-direction: column;
+    }
+    .filter-group select {
+        width: 100%;
+    }
+    .contact-grid {
+        flex-direction: column;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-top-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-bottom-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

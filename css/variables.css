@@ -1,0 +1,87 @@
+:root {
+    /* Tông màu Đất & Rừng Tây Nguyên chủ đạo */
+    --brown: #6B4226;
+    --brown-dark: #3f291b;
+    --forest: #245C3A;
+    --green: #4F7D45;
+    --green-light: #6faf5f;
+    --cream: #F6F1E7;
+    --white: #FFFFFF;
+    --text-gray: #555555;
+    --text-muted: #777777;
+
+    /* Viền, Bo góc & Bố cục */
+    --border-light: #E3D9C6;
+    --border-extra-light: #eee8de;
+    --radius: 8px;
+    --radius-card: 14px;
+    --container-width: 1200px;
+    --transition: 180ms ease;
+
+    /* Hệ màu Chân trang OCOP */
+    --footer-bg: #0d1310;
+    --footer-text: #a3aba7;
+    --footer-text-muted: #69736e;
+    --footer-border: #1a2520;
+    --footer-gold: #ffb834;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    background-color: var(--cream);
+    color: var(--text-gray);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition), background-color var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--brown-dark);
+    line-height: 1.25;
+    margin-top: 0;
+}
+
+/* Biểu tượng Accessibility */
+:focus-visible {
+    outline: 3px solid rgba(111, 175, 95, 0.6);
+    outline-offset: 3px;
+}
