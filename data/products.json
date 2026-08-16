@@ -2,111 +2,141 @@
   {
     "id": "SP001",
     "name": "Bơ Sáp Đắk Lắk",
-    "category": "Trái cây",
-    "origin": "Đắk Lắk",
+    "category": "dried-fruit",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Hợp tác xã nông nghiệp Đắk Lắk"
+    },
     "price": 60000,
     "unit": "Kg",
     "description": "Bơ sáp dẻo quánh, thịt vàng ươm, hương vị béo ngậy đặc trưng.",
-    "image": "assets/images/products/bo-sap-dak-lak.jpg",
+    "images": ["assets/images/products/bo-sap-dak-lak.jpg"],
     "inStock": true
   },
   {
     "id": "SP002",
     "name": "Bột Ca Cao Nguyên Chất",
-    "category": "Nông sản",
-    "origin": "Đắk Lắk",
+    "category": "coffee",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Hợp tác xã Ca cao Đắk Lắk"
+    },
     "price": 140000,
     "unit": "Túi 500g",
     "description": "Bột ca cao nguyên chất chế biến từ hạt ca cao cao nguyên thơm nồng.",
-    "image": "assets/images/products/bot-ca-cao-nguyen-chat.jpg",
+    "images": ["assets/images/products/bot-ca-cao-nguyen-chat.jpg"],
     "inStock": true
   },
   {
     "id": "SP003",
     "name": "Cà Phê Đắk Lắk",
-    "category": "Cà phê",
-    "origin": "Đắk Lắk",
+    "category": "coffee",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Nông trại Cà phê Buôn Ma Thuột"
+    },
     "price": 150000,
     "unit": "Hộp 500g",
     "description": "Cà phê hạt nguyên chất đậm vị, hương thơm tự nhiên từ Buôn Ma Thuột.",
-    "image": "assets/images/products/ca-phe-dak-lak.jpg",
+    "images": ["assets/images/products/ca-phe-dak-lak.jpg"],
     "inStock": true
   },
   {
     "id": "SP004",
     "name": "Hạt Tiêu Đen Đắk Lắk",
-    "category": "Gia vị",
-    "origin": "Đắk Lắk",
+    "category": "pepper",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Hợp tác xã Hồ tiêu Đắk Lắk"
+    },
     "price": 90000,
     "unit": "Hũ 500g",
     "description": "Hạt tiêu cay nồng, thơm phức, thu hoạch từ các vườn tiêu Tây Nguyên.",
-    "image": "assets/images/products/ho-tieu-dak-lak.jpg",
+    "images": ["assets/images/products/ho-tieu-dak-lak.jpg"],
     "inStock": true
   },
   {
     "id": "SP005",
     "name": "Hạt Mắc Ca Đắk Lắk",
-    "category": "Hạt dinh dưỡng",
-    "origin": "Đắk Lắk",
+    "category": "dried-fruit",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Cơ sở sản xuất hạt dinh dưỡng Đắk Lắk"
+    },
     "price": 180000,
     "unit": "Hũ 500g",
     "description": "Hạt mắc ca nứt vỏ tự nhiên, béo bùi, giàu dinh dưỡng.",
-    "image": "assets/images/products/mac-ca-dak-lak.jpg",
+    "images": ["assets/images/products/mac-ca-dak-lak.jpg"],
     "inStock": true
   },
   {
     "id": "SP006",
     "name": "Măng Khô Lệ Thủy",
-    "category": "Nông sản khô",
-    "origin": "Đắk Lắk",
+    "category": "tea",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Lâm sản sạch Tây Nguyên"
+    },
     "price": 200000,
     "unit": "Túi 500g",
     "description": "Măng rừng phơi khô tự nhiên bằng nắng ngàn, không hóa chất.",
-    "image": "assets/images/products/mang-kho-le.jpg",
+    "images": ["assets/images/products/mang-kho-le.jpg"],
     "inStock": true
   },
   {
     "id": "SP007",
     "name": "Mật Ong Hoa Cà Phê",
-    "category": "Mật ong",
-    "origin": "Đắk Lắk",
+    "category": "honey",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Trại ong tự nhiên Đắk Lắk"
+    },
     "price": 160000,
     "unit": "Chai 1 Lit",
     "description": "Mật ong nguyên chất thu hoạch vào mùa hoa cà phê nở rộ.",
-    "image": "assets/images/products/mat-ong-hoa-ca-phe.jpg",
+    "images": ["assets/images/products/mat-ong-hoa-ca-phe.jpg"],
     "inStock": true
   },
   {
     "id": "SP008",
     "name": "Rượu Cần Tây Nguyên",
-    "category": "Đồ uống truyền thống",
-    "origin": "Đắk Lắk",
+    "category": "tea",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Cơ sở rượu cần truyền thống Bản Đôn"
+    },
     "price": 250000,
     "unit": "Bình 5 Lít",
     "description": "Rượu cần lên men truyền thống từ men lá rừng và nếp nương.",
-    "image": "assets/images/products/ruou-can-tay-nguyen.jpg",
+    "images": ["assets/images/products/ruou-can-tay-nguyen.jpg"],
     "inStock": true
   },
   {
     "id": "SP009",
     "name": "Sầu Riêng Krông Pắc",
-    "category": "Trái cây",
-    "origin": "Đắk Lắk",
+    "category": "dried-fruit",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Hợp tác xã sầu riêng Krông Pắc"
+    },
     "price": 120000,
     "unit": "Kg",
     "description": "Sầu riêng cơm vàng hạt lép, ngọt đậm và thơm lừng.",
-    "image": "assets/images/products/sau-rieng-krong-pac.jpg",
+    "images": ["assets/images/products/sau-rieng-krong-pac.jpg"],
     "inStock": true
   },
   {
     "id": "SP010",
     "name": "Khô Nai Đắk Lắk",
-    "category": "Đặc sản khô",
-    "origin": "Đắk Lắk",
+    "category": "pepper",
+    "origin": {
+      "province": "Dak Lak",
+      "cooperative": "Cơ sở đặc sản khô Tây Nguyên"
+    },
     "price": 320000,
     "unit": "Hũ 300g",
     "description": "Thịt nai sấy khô tẩm ướp gia vị đậm đà, thơm ngon nổi tiếng.",
-    "image": "assets/images/products/kho-nai-dak-lak.jpg",
+    "images": ["assets/images/products/kho-nai-dak-lak.jpg"],
     "inStock": true
   }
 ]

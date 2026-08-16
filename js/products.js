@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mảng toàn cục lưu trữ danh sách sản phẩm gốc sau khi tải về
     let products = [];
 
-    // Bản đồ dịch tên danh mục (Hiển thị nhãn Tiếng Việt thân thiện)
+  // Bản đồ dịch tên danh mục (Đã bổ sung đầy đủ các danh mục thực tế của bạn)
     const categoryLabels = {
-        'coffee': 'Cà phê',
-        'tea': 'Trà đặc sản',
-        'honey': 'Mật ong',
-        'pepper': 'Tiêu & Gia vị',
-        'dried-fruit': 'Trái cây sấy'
+        'coffee': 'Cà phê & Ca cao',
+        'tea': 'Đồ uống & Thực phẩm khô',
+        'honey': 'Mật ong nguyên chất',
+        'pepper': 'Gia vị & Đặc sản khô',
+        'dried-fruit': 'Trái cây & Hạt dinh dưỡng'
     };
 
     // Bản đồ dịch tên tỉnh thành xuất xứ (Nếu file JSON lưu không dấu)

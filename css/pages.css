@@ -1,6 +1,6 @@
 /* --- TRANG CHỦ --- */
 
-/* 1. HERO SECTION (Chỉ giới thiệu chữ trên nền màu nâu ấm áp, đã bỏ ảnh nền lỗi) */
+/* 1. HERO SECTION (LIVESHOW LÀM NỀN CHẠY TỰ ĐỘNG - ĐÃ TỐI ƯU KHUNG & ĐỘ TRONG SUỐT) */
 .hero {
     position: relative;      /* BẮT BUỘC: Làm điểm bám định vị cho slideshow chạy bên trong */
     display: grid;
@@ -16,7 +16,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.20); /* Độ phủ tối 35% giúp chữ trắng dễ đọc hơn */
+    background: rgba(0, 0, 0, 0.20); /* Độ phủ tối 20% giúp chữ trắng dễ đọc hơn */
     z-index: 2; /* Nằm trên ảnh (z-index: 1) nhưng nằm dưới chữ (z-index: 3) */
 }
 
@@ -128,42 +128,50 @@
     line-height: 1.8;
 }
 
-/* CẤU TRÚC LIVESHOW CHUYỂN ẢNH ĐỘNG MƯỢT MÀ */
-.slideshow-container {
+/* 3. PHẦN ĐẶC TRƯNG TÂY NGUYÊN (TÍCH HỢP ẢNH NỀN PHONG CẢNH ĐẮK LẮK MỜ & ĐỒNG BỘ ICON) */
+.features-section {
     position: relative;
-    width: 100%;
-    height: 350px;
-    border-radius: var(--radius-card);
-    overflow: hidden;
-    box-shadow: 0 4px 14px rgba(67, 41, 24, 0.08);
-    background-color: var(--border-light);
+    background-image: url('../assets/images/common/tay-nguyen-intro.jpg'); /* Ảnh phong cảnh chạy ẩn mờ ảo phía sau */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hiệu ứng cuộn Parallax đa chiều */
+    padding: 64px 0 80px 0;
+    z-index: 1;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
 }
 
-.mySlides {
-    display: none;
-    width: 100%;
-    height: 100%;
+/* Lớp phủ mờ 93% để làm dịu bức ảnh nền phong cảnh phía sau */
+.features-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(246, 241, 231, 0.93);
+    z-index: -1;
 }
 
-.mySlides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
-/* Hiệu ứng mờ dần */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+/* Đồng bộ ảnh Icon màu sắc của Icons8 */
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    height: 52px; /* Tạo khung đồng đều */
 }
 
-@keyframes fade {
-    from { opacity: .4 } 
-    to { opacity: 1 }
+.feature-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
 
-/* Đặc trưng & Đặc sản nổi bật */
-.features-section, .products-preview-section {
+.products-preview-section {
     background-color: var(--white);
     border-top: 1px solid var(--border-light);
 }
