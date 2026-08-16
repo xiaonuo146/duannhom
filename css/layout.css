@@ -30,20 +30,26 @@
 
 .logo {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    align-items: center; /* Căn giữa hoàn hảo ảnh logo và chữ theo chiều dọc */
+    gap: 14px;           /* Khoảng cách vừa phải, tinh tế giữa ảnh logo và chữ */
+    text-decoration: none;
     flex-shrink: 0;
 }
 
 .logo-img {
-    height: 48px;
-    width: auto;
-    object-fit: contain;
+    width: 52px;         /* BẮT BUỘC đặt chiều rộng bằng chiều cao để tạo hình vuông */
+    height: 52px;        /* Chiều cao 52px tương thích hoàn hảo với kích thước chữ bên cạnh */
+    border-radius: 50%;  /* Bo tròn 50% để tạo thành hình tròn hoàn hảo */
+    object-fit: cover;   /* Tự động cắt và lấp đầy hình tròn mà KHÔNG làm móp hay méo ảnh */
+    border: 2px solid var(--border-light); /* Tạo viền mỏng màu kem để logo nổi bật */
+    box-shadow: 0 2px 6px rgba(67, 41, 24, 0.08); /* Tạo bóng đổ nhẹ giúp logo trông nổi và cao cấp hơn */
 }
 
 .logo-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 3px;            /* Tạo khoảng cách nhỏ 3px giữa tiêu đề và phụ đề cho thoáng mắt */
     line-height: 1.15;
 }
 
@@ -256,6 +262,13 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+.brand-wrapper {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    text-align: center;    
+    width: 100%;
 }
 
 .footer-copyright {

@@ -2,17 +2,55 @@
 
 /* 1. HERO SECTION (Chỉ giới thiệu chữ trên nền màu nâu ấm áp, đã bỏ ảnh nền lỗi) */
 .hero {
-    position: relative;
+    position: relative;      /* BẮT BUỘC: Làm điểm bám định vị cho slideshow chạy bên trong */
     display: grid;
-    min-height: clamp(350px, 45vh, 480px);
+    min-height: clamp(400px, 60vh, 580px); /* Độ cao của khung nâu */
     place-items: center;
-    background-color: var(--brown-dark); /* Sử dụng nền màu nâu Bazan đậm */
+    overflow: hidden;
+    background-color: var(--brown-dark); /* Nền màu nâu bazan gốc làm bệ đỡ phía sau */
     text-align: center;
 }
 
+/* Lớp phủ làm dịu ảnh đè lên trên ảnh để tăng độ tương phản cho chữ */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.20); /* Độ phủ tối 35% giúp chữ trắng dễ đọc hơn */
+    z-index: 2; /* Nằm trên ảnh (z-index: 1) nhưng nằm dưới chữ (z-index: 3) */
+}
+
+/* Container chứa slideshow làm nền */
+.hero-slideshow {
+    position: absolute;
+    inset: 0;                /* Căn vừa khít 100% bốn góc của khung nâu */
+    width: 100%;
+    height: 100%;
+    z-index: 1;              /* Nằm dưới cùng của khung */
+}
+
+.hero-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* GIÚP ẢNH VỪA KHÍT KHUNG NÂU, tự động co giãn không bị méo hay vỡ ảnh */
+    
+    /* ĐỘ TRONG SUỐT 30%: Giữ lại 70% độ hiển thị của ảnh (opacity: 0.7), 
+       cho phép màu nâu bazan của nền gốc .hero ánh xuyên qua ảnh 30% cực đẹp */
+    opacity: 0.7; 
+}
+
+/* Chữ và nút bấm nổi lên trên cùng bề mặt ảnh */
 .hero-content {
+    position: relative;
+    z-index: 3;              /* BẮT BUỘC z-index cao nhất để đưa chữ lên trên bề mặt của cả ảnh và lớp phủ */
     width: min(100% - 32px, 800px);
-    padding: 48px 0;
+    padding: 64px 0;
 }
 
 .hero-title {
@@ -21,32 +59,73 @@
     font-weight: 800;
     letter-spacing: -0.02em;
     margin-bottom: 18px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6); /* Bóng đổ đậm giúp chữ cực kỳ rõ nét trên nền ảnh */
 }
 
 .hero-subtitle {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     font-size: clamp(1rem, 1.8vw, 1.15rem);
     margin-bottom: 28px;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
 }
 
 /* 2. GIỚI THIỆU TÂY NGUYÊN */
 .intro-section {
+    font-family:'Times New Roman', Times, serif;
     background-color: var(--cream);
+    border-bottom: 1px solid var(--border-light);
+    padding: 64px 0 80px 0; 
+}
+.intro-content {
+    display: block; 
+    width: 100%;
+}
+/* Thiết lập độ rộng tối đa 1100px giúp chữ dàn đều toàn bộ khung trang */
+.container-narrow {
+    max-width: 1100px; 
+    margin: 0 auto;
 }
 
-.intro-content {
-    display: grid;
-    grid-template-columns: 1.2fr 1.1fr;
-    gap: 40px;
-    align-items: center;
-    margin-top: 20px;
+.container-narrow h2 {
+    text-align: center;
+    font-size: clamp(26px, 3.5vw, 32px);
+    color: var(--brown-dark);
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+.container-narrow h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3.5px;
+    margin: 14px auto 0 auto; /* Căn giữa vệt gạch chân */
+    background: linear-gradient(90deg, var(--forest), var(--brown));
+    border-radius: 99px;
+}
+
+.intro-text {
+    width: 100%;
+    margin-top: 32px;
 }
 
 .intro-text p {
-    margin-bottom: 16px;
-    color: var(--text-gray);
-    font-size: 15.5px;
-    text-align: justify;
+    font-size: 18px;            
+    line-height: 1.85;          
+    color: #3b3b3b;             
+    margin-bottom: 24px;
+    text-align: justify;       
+    text-justify: inter-word;
+    text-indent: 35px;          
+}
+
+/* Tạo điểm nhấn đặc biệt cho đoạn văn đầu tiên (Đoạn mở đầu to và đậm màu bazan thẫm để cuốn hút người đọc) */
+.intro-text p:first-of-type {
+    font-size: 19.5px;
+    color: var(--brown-dark);
+    font-weight: 600;
+    line-height: 1.8;
 }
 
 /* CẤU TRÚC LIVESHOW CHUYỂN ẢNH ĐỘNG MƯỢT MÀ */
