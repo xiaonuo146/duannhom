@@ -1,0 +1,5 @@
+/* Nạp tất cả các file css thành phần */
+@import 'variables.css';
+@import 'layout.css';
+@import 'components.css';
+@import 'pages.css';
