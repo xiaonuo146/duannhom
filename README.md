@@ -63,7 +63,6 @@ duannhom/
 *   **Data:** JSON (Định dạng cấu trúc mảng đối tượng nghiêm ngặt).
 *   **Icons:** Sử dụng hệ thống biểu tượng phẳng đồng bộ từ Icons8 thay cho biểu tượng Emoji để tối ưu tính thẩm mỹ chuyên nghiệp.
 
----
 
 ## 4. Hướng dẫn khởi chạy dự án tại máy cục bộ (Local Run)
 
