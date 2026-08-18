@@ -141,7 +141,7 @@
     border-bottom: 1px solid var(--border-light);
 }
 .products-preview-section h2 {
-    margin-bottom: 22px; /* Tạo khoảng cách trống 2px ngăn cách chữ và thẻ */
+    margin-bottom: 22px; /* Tạo khoảng cách trống 22px ngăn cách chữ và thẻ */
 }
 .features-section h2 {
     margin-bottom: 22px;
@@ -149,7 +149,7 @@
 .products-preview-section {
     background-color: var(--white);
     border-top: 1px solid var(--border-light);
-    padding: 30px 0 60px 0; /* ĐÃ THÊM: Tạo khoảng đệm trên 64px và dưới 80px để đẩy chữ xuống cực kỳ thoáng đãng */
+    padding: 30px 0 60px 0; 
 }
 /* Lớp phủ mờ 93% để làm dịu bức ảnh nền phong cảnh phía sau */
 .features-section::before {
