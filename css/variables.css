@@ -76,7 +76,7 @@ button {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--brown-dark);
-    line-height: 1.25;
+    line-height: 1.0;
     margin-top: 0;
 }
 
